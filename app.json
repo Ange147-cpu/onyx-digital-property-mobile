@@ -9,6 +9,16 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "2.1.0"
+          }
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.onyx.digitalproperty"
@@ -17,14 +27,16 @@
       "package": "com.onyx.digitalproperty",
       "adaptiveIcon": {
         "backgroundColor": "#0BA1628"
-      },
-      "buildProperties": {
-        "kotlinVersion": "2.1.0"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "single"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "36ab0722-c5ef-44bf-98f2-ce7c8b4e3771"
+      }
     }
   }
 }
